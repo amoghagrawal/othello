@@ -1,0 +1,28 @@
+<html><head>
+    <base href="." />
+    <title>Othello</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-content">
+                <div class="scorecard">
+                    <div class="score black-score" id="blackScore">Black: 2</div>
+                    <div class="score white-score" id="whiteScore">White: 2</div>
+                </div>
+                <div class="controls">
+                    <button class="reset-btn" onclick="game.resetGame()">Reset Game</button>
+                </div>
+            </div>
+        </div>
+        <div class="board" id="board"></div> 
+        <div class="game-over-overlay" id="gameOverOverlay">
+            <div class="game-over-popup">
+                <h2 id="gameOverMessage">Game Over!</h2>
+                <p>Press Enter to restart the game</p>
+                <button class="play-again-btn" onclick="game.resetGame()">Play Again</button>
+            </div>
+        </div>
+    <script src="script.js"></script>
+    </body></html>
