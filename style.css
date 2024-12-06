@@ -7,10 +7,14 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-y: auto; 
+    overflow-x: hidden;
 }
 
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     width: 100%;
     background: #222;
     padding: 15px;
@@ -18,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .header-content {
@@ -36,6 +40,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.15);
     margin: 10px;
+    margin-bottom: 20px; 
 }
 
 .row {
@@ -43,8 +48,8 @@ body {
 }
 
 .cell {
-    width: 72px;
-    height: 72px;
+    width: 72px; 
+    height: 72px; 
     border: 1px solid rgba(0, 0, 0, 0.3);
     background: #009067;
     display: flex;
@@ -55,8 +60,8 @@ body {
 }
 
 .piece {
-    width: 58px;
-    height: 58px;
+    width: 58px; 
+    height: 58px; 
     border-radius: 50%;
     transition: all 0.3s ease;
 }
@@ -250,9 +255,10 @@ body {
     }
 }
 
+
 @media screen and (max-height: 700px) {
     .cell {
-        width: 54px;
+        width: 54px; 
         height: 54px;
     }
     
